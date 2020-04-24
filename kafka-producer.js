@@ -25,7 +25,7 @@ try {
                 topic: 'poc-topic',
                 messages: JSON.stringify(req.body),
                 key: req.body.empId
-            }]
+            },]
             console.log(payload, req.body)
 
             producer.send(payload, (err, data) => {
